@@ -1,0 +1,111 @@
+title:            wimm - Where is my mind?
+description:      Freewritten thoughts about how we want to live. Some raw, some researched.
+
+# put your disqus here
+disqus_shortname:
+reading_time:     true # if true, shows the estimated reading time for a post
+words_per_minute: 200
+logo:             images/earthrise.jpg # logo visible in the topbar
+excerpt_separator: <!--more-->
+# Your site's domain goes here (eg: //mmistakes.github.io, http://mademistakes.com, etc)
+# When testing locally leave blank or use http://localhost:4000
+
+url: http://localhost:4000
+
+# Categories
+categories: [Utopia, Dystopia, MetaModern, Minddump, Technology]
+
+# draw your top menu here
+# each item must have a title and a url.
+#   To list post categories. use type: 'categories'
+#   To create sub categories. add a submenu item
+# See the example
+menu:
+  - title: 'Tags'
+    url: '/tags'
+  - title: 'Trees'
+    url: '#'
+    submenu:
+        - title: 'Utopia'
+          url: '/utopia'
+        - title: 'Dystopia'
+          url: '/Dystopia'
+        - title: 'MetaModern'
+          url: '/MetaModern'
+        - title: Technology
+          url: /technology
+  - title: 'Categories'
+    url: '/categories'
+    type: categories
+#  - title: 'Favorites'
+#    url: '#'
+    # submenu:
+    #  - title: 'Code Highlighter'
+    #    url: '/intro/code-highlighting-post/'
+    #  - title: 'Sample Post'
+    #    url: '/intro/sample-post/'
+
+
+# Owner/author information
+owner:
+  name:           Jannik
+  site:           http://aronbordin.com
+  avatar:         images/earthrise.jpg
+  bio:            Studied Political Science. Interested in our shared future.
+  email:          wimm@posteo.de
+  # Twitter nick for use in Twitter cards and follow button.
+  twitter:  # if no twitter in this config, the twitter follow button will be removed
+  # GitHub nick for use in follow button in author block.
+  github: wim-mind
+
+# Twitter account associated with the site if different from owner/author twitter account.
+# Used in Twitter cards.
+twitter:
+
+# Social networking links used in author block underneath posts. Update and remove as you like.
+social:
+  - title: "github"
+    url: "https://github.com/wim-mind"
+
+# Background image to be tiled on all pages
+background:
+
+# Analytics and webmaster tools stuff goes here
+google_analytics:
+google_verify:
+# https://ssl.bing.com/webmaster/configure/verify/ownership Option 2 content= goes here
+bing_verify:
+
+# http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+timezone:    Europe/Berlin
+locale:      en_US
+future:      true
+highlighter: rouge
+markdown:    kramdown
+sass:
+  sass_dir: _sass
+  style: compressed
+
+# https://github.com/mojombo/jekyll/wiki/Permalinks
+permalink:   /:categories/:title/
+
+# Amount of post to show on home page
+paginate: 5
+
+# if true, shows the floatting share buttons
+float_share: false
+
+# Octopress
+# Default extensions
+post_ext: md
+page_ext: md
+# Found in _templates/
+post_layout: post
+page_layout: page
+# Format titles with titlecase?
+titlecase: true
+
+include: [".htaccess"]
+exclude: ["lib", "config.rb", "Capfile", "config", "Gemfile", "Gemfile.lock", "README.md", "LICENSE", "log", "Rakefile", "Rakefile.rb", "tmp", "less", "*.sublime-project", "*.sublime-workspace", "test", "spec", "Gruntfile.js", "package.json", "node_modules", /samplefiles]
+plugins: ["jekyll-paginate", "tzinfo"]
+theme: neo-hpstr-jekyll-theme
